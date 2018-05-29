@@ -10,7 +10,6 @@ public class Main {
         int palin = input;
         if (isOdd == 1)
             n /= b;
-
         while (n > 0) {
             palin = palin * b + (n % b);
             n /= b;
@@ -21,7 +20,6 @@ public class Main {
     static void generatePaldindromes(int n) {
         int number;
         for (int j = 0; j < 2; j++) {
-
             int i = 1;
             while ((number = createPalindrome(i, 10, j % 2)) < n) {
                 System.out.print(number + " ");
@@ -31,7 +29,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println("PLS, enter the number ");
+        System.out.println("please, enter the number ");
         Scanner plumbus = new Scanner(System.in);
         int plumb = plumbus.nextInt();
         if (plumb > 100) {
